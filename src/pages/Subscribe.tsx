@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { Logo } from '../components/Logo'
 import { useCreateSubscriberMutation } from '../graphql/generated'
 
+import codeMockup from '../../src/assets/code-mockup.png'
+
 interface Fields {
   name: string
   email: string
@@ -80,7 +82,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" alt="" className="mt-10" />
+      <img src={codeMockup} alt="" className="mt-10" />
     </div>
   )
 }
